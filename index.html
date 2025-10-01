@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="todo">
+        <header class="todo__header">
+          <h1 class="todo__title">TODO</h1>
+          <button class="todo__theme-btn" type="button" id="theme-btn">
+            <img src="/images/icon-moon.svg" alt="icon-moon" id="icon-moon" />
+            <img src="/images/icon-sun.svg" alt="icon-sun" id="icon-sun" />
+          </button>
+        </header>
+
+        <form class="todo__form">
+          <div class="circle"></div>
+          <input
+            type="text"
+            class="todo__input"
+            id="todo-input"
+            placeholder="Create a new todo..."
+            autocomplete="off"
+          />
+        </form>
+
+        <ul class="todo__list" id="todo-list"></ul>
+
+        <div class="todo__items-info">
+          <span class="todo__items-left" id="todo-itemsLeft">5 items left</span>
+
+          <div class="todo__filters">
+            <span class="todo__filter active" id="filter-all">All</span>
+            <span class="todo__filter" id="filter-active">Active</span>
+            <span class="todo__filter" id="filter-completed">Completed</span>
+          </div>
+
+          <span class="todo__btn-clear" id="clear-completed"
+            >Clear Completed</span
+          >
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="todo__instruction">Drag and drop to reorder list</p>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
