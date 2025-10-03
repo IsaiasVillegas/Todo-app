@@ -209,10 +209,10 @@ body.dark {
   flex-shrink: 0;
   transition: 0.3s;
   cursor: pointer;
-}
 
-.todo__custom-checkbox svg {
-  opacity: 0;
+  svg {
+    opacity: 0;
+  }
 }
 
 input[type="checkbox"]:checked ~ .todo__custom-checkbox {
@@ -303,14 +303,23 @@ input[type="checkbox"]:checked ~ .todo__text {
 }
 
 .todo__instruction {
-  font-size: var(--fs-300);
   font-weight: var(--fw-bold);
   color: var(--clr-gray-600);
-  text-align: center;
 }
 
 .footer {
+  font-size: var(--fs-300);
+  text-align: center;
   padding-bottom: 2rem;
+
+  a {
+    font-weight: var(--fw-bold);
+    color: var(--clr-blue-500);
+    background: var(--gradient);
+    background-size: cover;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 @media screen and (min-width: 376px) {
